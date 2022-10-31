@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Footer from './Footer';
+import Header from './Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FirstApp from './App1';
+import Home from './Home';
+import SecondApp from './App2';
+import AppHistory from './AppHistory';
+import Main from './Main';
+
+export  interface PlayerDetailsInterface{
+  player: string;
+  game: any;
+  beginTime: Date;
+  endTime: Date;
+  limit: number;
+  speed: number;
+  score: number
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/game/:gameType' element={<Main  />}></Route>
+      <Route path='/game/:gameType' element={<Main />}></Route>
+      <Route path='/apphistory' element={<AppHistory />}></Route>
+    </Routes>
+    <Footer />
+    </BrowserRouter>
+    </>
   );
 }
 

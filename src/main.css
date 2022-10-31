@@ -1,0 +1,176 @@
+.container{
+    background-color: azure;
+    min-height: calc(100vh - 30px);
+    padding: 10px;
+}
+
+.container #playGround{
+    background-color: antiquewhite;
+    height: 85%;
+    width: 98%;
+    position: absolute;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.container .header{
+    background-color: rgb(193, 192, 191);
+    height: 10%;
+    width: 99%;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#playObject{
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+#scoreCont{
+    text-align: center;
+}
+
+.container #gameSettings{
+    background-color: antiquewhite;
+    height: 680px;
+    width: 25%;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    float: right;
+}
+
+.openbtn {
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(102, 85, 85);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-decoration: none;
+  }
+
+  li {
+float: left;
+padding: 20px;
+font-size: 20px;
+  }
+
+  li:hover {
+    background-color: #111;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 37px auto 10px;
+    width: calc(480px * 2);
+  }
+  
+  .card {
+    box-shadow: 0 3px 10px 0 #aaa;
+    cursor: pointer;
+    height: 380px;
+    position: relative;
+    width: 403px;
+    margin: 30px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 1100px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+      width: calc(280px * 2);
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      display: block;
+      width: 100vw;
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+
+    .rectangle{
+      height: 40px;
+      width: 40px
+    }
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
