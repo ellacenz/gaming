@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/simple-click-game/static/css/main.726b1ca4.css",
+    "main.js": "/simple-click-game/static/js/main.8620be52.js",
+    "static/js/787.fb0d2531.chunk.js": "/simple-click-game/static/js/787.fb0d2531.chunk.js",
+    "static/media/game2.png": "/simple-click-game/static/media/game2.ffa5195db35d8881a64d.png",
+    "static/media/game1.png": "/simple-click-game/static/media/game1.5aa2362b2d153ae196b5.png",
+    "index.html": "/simple-click-game/index.html",
+    "main.726b1ca4.css.map": "/simple-click-game/static/css/main.726b1ca4.css.map",
+    "main.8620be52.js.map": "/simple-click-game/static/js/main.8620be52.js.map",
+    "787.fb0d2531.chunk.js.map": "/simple-click-game/static/js/787.fb0d2531.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.726b1ca4.css",
+    "static/js/main.8620be52.js"
+  ]
+}
