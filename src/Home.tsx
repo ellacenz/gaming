@@ -7,10 +7,10 @@ import gameTwoImg from "./game2.png";
 function Home(){
     const [gameUrl, setGameUrl] = useState("/")
     const handleClickGame1 = () =>{
-        setGameUrl("/game/game1")
+        setGameUrl("/#/game/game1")
     }
     const handleClickGame2 = () =>{
-        setGameUrl("/game/game2")
+        setGameUrl("/#/game/game2")
         
     }
    

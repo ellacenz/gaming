@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import FirstApp from './App1';
 import Home from './Home';
 import SecondApp from './App2';
@@ -22,7 +22,7 @@ export  interface PlayerDetailsInterface{
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
     <Header />
     <Routes>
       <Route path='/' element={<Home />}></Route>
@@ -31,7 +31,7 @@ function App() {
       <Route path='/apphistory' element={<AppHistory />}></Route>
     </Routes>
     <Footer />
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }
